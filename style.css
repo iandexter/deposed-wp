@@ -1,0 +1,248 @@
+/*
+Theme Name:Deposed
+Theme URI: http://iandexter.net
+Description:A narrow-width, minimalist theme based on <a href="http://powazek.com">DePo Skinny</a>. Enjoy!
+Version:   1.0
+Author:    Ian Dexter R Marquez
+Author URI:http://iandexter.net
+Tags:minimalist,narrow,single-column
+*/
+
+* { margin:0; padding:0; }
+
+body {
+  background:#fff;
+  color:black;
+  text-align:center;
+  font-size:11px;
+  line-height:140%;
+  font-family:'Bitstream Vera Sans','Lucida Grande',Helvetica,Verdana,Geneva,Arial,sans-serif;
+}
+
+img#wpstats { width:0px; height:0px; overflow:hidden; }
+
+a { color:#000; text-decoration:none; }
+a:hover { color:#06c; text-decoration:none; }
+
+p, ul, ol, li { margin-bottom:18px; }
+
+blockquote { 
+  margin:0 18px 18px 18px;
+  font-size:12px;
+  color:#666;
+  padding-left:10px;
+  border-left:1px solid #ccc;
+}
+
+ul {
+  list-style-type:square;
+  margin-left:2em;
+}
+
+ol { margin-left:2em; }
+
+h1 { 
+  font-size:26px; 
+  line-height:36px;
+  margin-bottom:18px; 
+}
+
+h2 { 
+  font-size:22px; 
+  line-height:36px;
+  margin-bottom:18px;
+}
+
+h3 { 
+  background-color:#f8f8f8;
+  font-size:18px; 
+  line-height:200%;
+  margin-bottom:20px;
+  padding:10px 0 10x 0;
+}
+
+h4 { 
+  font-size:14px; 
+  line-height:18px;
+  margin-bottom:20px;
+}
+
+.container {
+  text-align:center;
+  margin:0 auto;
+  padding:0;
+  width:500px;
+}
+
+/* HEADER */
+
+.header {
+  padding:50px 0 0;
+	margin:0;
+  text-align:left;
+}
+
+.header h1 {
+  font-size:72px;
+  color:#000;
+  font-weight:bold;
+}
+
+.header span {
+  margin-left:10px;
+  font-size:12px;
+  color:#666;
+  font-weight:normal;
+}
+.header span img { vertical-align:middle; }
+.header span a img { border:0; }
+
+.header a { color:#333; }
+.header a:hover { color:#06c; }
+
+/* POSTS */
+
+.post p a { font-weight:bold }
+
+.post {
+  border-top:1px solid #ccc;
+  padding:10px 0 10px 0;
+  text-align:left;
+  width:500px;
+}
+
+.postcomment {
+  padding:18px 0 0 0;
+  text-align:left;
+  width:500px;
+  font-size:11px;
+  color:#666;
+}
+
+.commentslnk {
+  font-size:13px;
+  text-align:center;
+}
+
+p.byline {
+  margin-top:-10px;
+  font-size:9px;
+  color:#555;
+}
+
+span.previous { padding:0 20px 0 0; float:left; }
+span.next { float:right; }
+
+span.edit a { 
+  float:right;
+  font-weight:normal; 
+  font-size:11px; 
+  color:#666; 
+  border:1px solid #ccc; 
+  padding:0 4px; 
+}
+
+.metainfo {
+  float:left;
+  width:152px;
+  font-size:10px;
+  color:#666;
+  padding:3px 0;
+}
+
+.previously {
+  text-align:left;
+  width:500px;
+  padding:20px 0 3px 0;
+  border-top:1px solid #ccc;
+  font-size:12px;
+}
+
+.previously a { font-weight:bold }
+
+.text_area { width:480px !important; }
+
+.postform { width:150px; margin:0;} 
+
+/* FOOTER */
+
+.footer {
+  font-size:11px;
+  padding:22px 0 10px 5px;
+  margin-top:18px;
+  border-top:1px solid #666;
+  text-align:left;
+  color:#666;
+}
+
+.footer div {
+  width:150px;
+  margin:0 20px 0 0;
+  float:left;
+}
+
+.footer img { border:0; }
+
+.footer div.last {
+  width:150px;
+  margin:0 0 0 0;
+}
+
+.copyright {
+  font-size:11px;
+  margin:12px 0 0 0;
+  padding:18px 0 10px 0;
+  border-top:1px solid #666;
+  text-align:right;
+  color:#666;
+}
+
+ul.nav li { margin:0; }
+
+.aligncenter { 
+  text-align:center; 
+  display:block;
+  margin-left:auto;
+  margin-right:auto
+}
+
+.search { padding:11px 0 0 20px; float:right; }
+.search input { width:120px; }
+
+/* TWITTER */
+
+.twitter { text-align:left; padding:5px; margin-bottom:5px; background-color:#f8f8f8; font-size:10px; }
+.twitter a img { border:none; }
+.twitter img { vertical-align:middle; float:left; padding-right:5px; }
+
+/* FLICKR */
+
+.flickr {
+  border-bottom:1px solid #ccc;
+  text-align:center;
+  padding:11px 0;
+  margin-bottom:9px;
+  width:500px;
+}
+
+.flickr img {
+  width:59px;
+  height:59px;
+  margin:1px 5px;
+  border:1px solid #666;
+}
+
+.flickr img:hover {
+  width:75px;
+  height:75px;
+  margin:-7px -3px;
+  border:1px solid #000;
+}
+
+.flickr span a { color:#ccc; }
+
+/* DELICIOUS */
+
+.delicious-tags { font-size:11px; color:#666; }
+.delicious-tags a { font-weight:normal; color:#333; }
+ul.delicious { color:#555; }
