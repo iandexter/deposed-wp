@@ -13,9 +13,10 @@ Template Name: Archives Index
        	<?php wp_get_archives('type=monthly'); ?>
       </ul>
     </div>
-    <h3>By Category</h3>
+    <h3>By Category/Tags</h3>
     <ul class="nav">
       <?php wp_list_cats(); ?>
     </ul>
+		<?php wp_tag_cloud('smallest=8&largest=36&unit=px&orderby=count&order=DESC'); ?>
   </div>
 <?php get_footer(); ?>

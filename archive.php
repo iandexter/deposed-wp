@@ -41,7 +41,7 @@
 	<?php endwhile; endif; ?>
 <?php endif; ?>
 <div class="postnoline">
-	<span class="previous"><?php next_posts_link('&larr; Before') ?></span>
-	<span class="next"><?php previous_posts_link('After &rarr;') ?></span>
+	<span class="previous"><?php next_posts_link('&laquo; Before') ?></span>
+	<span class="next"><?php previous_posts_link('After &raquo;') ?></span>
 </div>
 <?php get_footer(); ?>

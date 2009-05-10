@@ -1,6 +1,15 @@
 <?php get_header(); ?>
 <?php if(function_exists('aktt_latest_tweet')){ ?>
-<div class="twitter"><a href="http://twitter.com/iandexter" title="Follow me on Twitter"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter-icon.png" width="32" height="32" /></a><?php aktt_latest_tweet(); ?></div>
+<?php
+function aktt_show_url() {
+  global $aktt;
+	if (!empty($aktt->twitter_username)) {
+	  $output = aktt_profile_url($aktt->twitter_username);
+  }
+  print($output);
+}
+?>
+<div class="twitter"><a href="<?php aktt_show_url(); ?>" title="Follow me on Twitter"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter-icon.png" width="32" height="32" /></a><?php aktt_latest_tweet(); ?></div>
 <?php } ?>
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>

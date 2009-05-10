@@ -4,7 +4,7 @@
     <p>Sorry, the page you're looking for is not here. If you're looking for something in particular, try using the search form or browse the archives below.</p>
     <script type="text/javascript">
       var GOOG_FIXURL_LANG = 'en';
-      var GOOG_FIXURL_SITE = 'http://iandexter.net/';
+      var GOOG_FIXURL_SITE = "<?php bloginfo('url') ?>";
     </script>
     <script type="text/javascript" src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
     <div style="float:right;width:250px;">

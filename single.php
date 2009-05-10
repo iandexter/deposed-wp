@@ -8,10 +8,10 @@
   </div><!-- end post -->
   <?php comments_template(); ?>
 <?php endwhile; else: ?>
-  <h2 class="page_header">Uh oh.</h2>
+  <h2 class="page_header">Oops! Page not found.</h2>
   <div class="entry">
     <p>Sorry, no posts matched your criteria. Wanna search instead?</p>
-    <?php include (TEMPLATEPATH . '/searchform.php'); ?>
+    <?php include (TEMPLATEPATH . '/search.php'); ?>
   </div>
 <?php endif; ?>
   <br />

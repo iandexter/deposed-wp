@@ -1,13 +1,12 @@
 <br clear="all" />
   <div class="footer">
     <div>
-      <p><strong>About</strong></p>
-      <p><!-- The text in the "About Yourself" box on your profile page will automatically appear here. -->
-      <?php if (have_posts()) : the_post();
-        the_author_description();
-      endif;
-      rewind_posts(); ?>
-      <p><strong>Archives</strong></p>
+      <p><strong><a href="<?php bloginfo('url') ?>/about">About</a></strong></p>
+			<?php if (have_posts()) : the_post(); ?>
+			<p><?php the_author_description(); ?></p>
+			<?php endif; ?>
+      <?php rewind_posts(); ?>
+      <p><strong><a href="<?php bloginfo('url') ?>/archives">Archives</a></strong></p>
       <select name=\"archive-dropdown\" onChange='document.location.href=this.options[this.selectedIndex].value;'> 
       <option value=\"\"><?php echo attribute_escape(__('Select Month')); ?></option> 
       <?php wp_get_archives('type=monthly&format=option'); ?> </select>
@@ -23,6 +22,7 @@
         <input type="submit" value="Search" style="font-size:10px;vertical-align:top" />
       </p></form>
       <p>Subscribe via <a href="<?php bloginfo('rss2_url'); ?>">RSS</a>.</p>
+			<p><a href="<?php bloginfo('url') ?>/feedback">Send your feedback</a>.</p>
       <?php wp_register('<p>', '</p>'); ?> 
     </div>
   </div><!-- end footer -->
