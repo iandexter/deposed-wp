@@ -7,15 +7,8 @@
       var GOOG_FIXURL_SITE = "<?php bloginfo('url') ?>";
     </script>
     <script type="text/javascript" src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
-    <div style="float:right;width:250px;">
-      <h3>Archives by Month</h3>
-      <ul class="nav">
-      	<?php wp_get_archives('type=monthly'); ?>
-      </ul>
-    </div>
-    <h3>Archives by Tag</h3>
-    <ul class="nav">
-      <?php wp_list_cats(); ?>
-    </ul>
+		<?php if(function_exists('randomimage')){ ?>
+		<?php randomimage(); ?>
+		<?php } ?>
   </div>
 <?php get_footer(); ?>
