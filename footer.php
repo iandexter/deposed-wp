@@ -2,9 +2,9 @@
   <div class="footer">
     <div>
       <h4><a href="<?php bloginfo('url') ?>/about">About</a></h4>
-			<?php if (have_posts()) : the_post(); ?>
-			<p><?php the_author_description(); ?></p>
-			<?php endif; ?>
+      <?php if (have_posts()) : the_post(); ?>
+      <p><?php the_author_description(); ?></p>
+      <?php endif; ?>
       <?php rewind_posts(); ?>
       <h4><a href="<?php bloginfo('url') ?>/archives">Archives</a></h4>
       <select name=\"archive-dropdown\" onChange='document.location.href=this.options[this.selectedIndex].value;'> 
@@ -22,7 +22,7 @@
         <input type="submit" value="Search" style="font-size:10px;vertical-align:top" />
       </p></form>
       <p>Subscribe via <a href="<?php bloginfo('rss2_url'); ?>">RSS</a>.</p>
-			<p><a href="<?php bloginfo('url') ?>/feedback">Send your feedback</a>.</p>
+      <p><a href="<?php bloginfo('url') ?>/feedback">Send your feedback</a>.</p>
       <?php wp_register('<p>', '</p>'); ?> 
     </div>
   </div><!-- end footer -->
